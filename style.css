@@ -95,25 +95,64 @@ ul.drop-list {
     display: none;
 }
 
-main {
-    height: 100vh;
+.nav__link {
+    color: var(--clr-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
 
+.nav__link--button:hover,
+.nav__link--button:focus {
+    border-radius: .75em;
+    background: transparent;
+    border: .1em solid var(--clr-primary);
+    padding: 0.5em 1em;
+}
+
+main {
+    margin-top: 2em;
 }
 
 section.hero {
    display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+/*    max-width: 1200px;*/
     width: 80%;
     margin: 0 auto;
+    gap: 2rem;
 }
 
 .intro {
     max-width: 45ch;
 }
 
+.title {
+    font-size: clamp(var(--fs-default),  5vw, 7em);
+    font-weight: var(--fw-bold);
+}
 
+.intro p {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: var(--clr-primary-gray);
+}
+
+.btn {
+    border-radius: .75em;
+    color: var(--clr-neutral-white);
+    background: var(--clr-primary);
+    padding: 1em 1.5em;
+}
+
+.picture {
+        align-self: flex-start;
+    margin: 0;
+}
+
+.picture img {
+    max-height: 80vh;
+}
 
 /*section.firstone {
     height: 100vh;
